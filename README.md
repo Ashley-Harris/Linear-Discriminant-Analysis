@@ -1,10 +1,8 @@
 # Linear Discriminant Analysis to Identify Diabetics
 
-I use the Linear Discriminant Analysis (LDA) Machine Learning method to categorise diabetic individuals.
-
 The dataset 'diabetes-bivar.csv' contains information on 144 participants and their glucose test tolerance score (GTT), insulin levels, and whether they are healthy, clinically diabetic (based on GTT), or overtly diabetic. 
 
-I aim to use the dataset above to predict the presence of diabetes in new patients, using LDA. 
+I aim to apply the Linear Discriminant Analysis (LDA) Machine Learning method to the dataset above to predict the presence of diabetes in new patients.
 ______________________________________________________________________________________________________________________________
 
 LDA is a method for reducing dimensionality and highlighting differences between groups of observations.
