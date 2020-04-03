@@ -2,7 +2,7 @@
 
 The dataset 'diabetes-bivar.csv' contains information on 144 participants and their glucose test tolerance score (GTT), insulin levels, and whether they are healthy, clinically diabetic (based on GTT), or overtly diabetic. 
 
-I aim to apply the Linear Discriminant Analysis (LDA) Machine Learning method to the dataset above to predict the presence of diabetes in new patients.
+I aim to apply the Linear Discriminant Analysis (LDA) Machine Learning method to the dataset above to predict the presence of diabetes in new patients. Please see 'Analysis.pdf' for my final report. 
 ______________________________________________________________________________________________________________________________
 
 LDA is a method for reducing dimensionality and highlighting differences between groups of observations.
