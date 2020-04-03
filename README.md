@@ -1,4 +1,4 @@
-# Linear-Discriminant-Analysis
+# Linear Discriminant Analysis to Identify Diabetics
 
 I use the Linear Discriminant Analysis (LDA) Machine Learning method to categorise diabetic individuals.
 
