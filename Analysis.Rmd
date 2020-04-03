@@ -1,0 +1,49 @@
+---
+title: "Analysis"
+author: "Ashley Harris"
+date: "4/3/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(MASS)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Explanation of Linear Discriminant Analysis
+
+# Exploring the data
+
+```{r cars}
+diabetes.df = read.csv("diabetes-bivar.csv", header=TRUE)
+head(diabetes.df)
+```
+
+We have `dim(diabetes.df)[1]` participants in our dataset. 
+
+The data are comprised of three columns:
+*The "glutest" column represents the glucose tolerance test score for each participant.
+*The "insulin" column represents the insulin present in the participant.
+*The group column represents the classification for each participant: 1 for overt diabetes, 2 for chemical diabetes (no symptoms, but abnormal glucose tolerance test), and 3 for an overt diabetic.
+
+## plotting the data
+
+```{r}
+plot(glutest~insulin, data=diabetes.df, col=group, main="Insulin levels vs glucose tolerance test scores", xlab="insulin level" ylab="glucose tolerance test score")
+dim(diabetes.df)
+```
+
+# explanation of linear discriminant analysis (LDA)
+
+LDA is a method for reducing dimensionality and highlighting differences between groups of observations.
+*Dimensionality reduction aims to reduce the number of dimensions (i.e. variables) in a dataset while retaining as much information as possible.
+*Highlighting differences between groups of observations allows us to predict an unknown characteristic of a new observation (in this case, whether a participant is diabetic or not) based on characteristics that we do know (insulin and glucose test results). 
+
+# Conducting linear discriminant analysis
+
+```{r}
+
+diabetes.lda = lda(group~log(glutest)+insulin, data=diabetes)
+
+```
+
